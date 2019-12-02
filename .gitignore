@@ -61,6 +61,7 @@ builds/**/images/*
 lenslocked.com
 images/**
 jazzy.js
+ginRouterExample.go
 
 
 .config
