@@ -60,6 +60,8 @@ builds/**/images/*
 # Don't include our binary
 lenslocked.com
 images/**
+jazzy.js
+
 
 .config
 notes/**
