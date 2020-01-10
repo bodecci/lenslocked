@@ -62,6 +62,10 @@ lenslocked.com
 images/**
 jazzy.js
 ginRouterExample.go
+routes.go
+index.html
+bootstrap.css
+
 
 
 .config
