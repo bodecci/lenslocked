@@ -48,7 +48,7 @@ func main() {
 
 	homeView = views.NewView("bootstrap","views/home.gohtml")
 	contactView = views.NewView("bootstrap","views/contact.gohtml")
-	signupView = views.NewView("boostrap", "views/signup.gohtml")
+	signupView = views.NewView("bootstrap", "views/signup.gohtml")
 
 	r := mux.NewRouter()
 	r.NotFoundHandler = http.HandlerFunc(notFound)
