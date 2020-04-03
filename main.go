@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/bodecci/use_golang/lenslocked/views"
 	_ "html/template"
+	"log"
 
 	"github.com/gorilla/mux"
 	"net/http"
@@ -55,9 +56,9 @@ func main() {
 	r.HandleFunc("/", home)
 	r.HandleFunc("/contact", contact)
 	r.HandleFunc("/faq", faq)
-	r.HandleFunc("/signup", signup)
-	fmt.Println("Server starting")
-	http.ListenAndServe(":3000", r)
+	r.HandleFunc("/upload", signup)
+	fmt.Println("Server starting 8080")
+	log.Fatal(http.ListenAndServe(":8080", r))
 }
 
 func must(err error) {
