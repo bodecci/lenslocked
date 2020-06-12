@@ -54,7 +54,7 @@ func main() {
 	//r.HandleFunc("/faq", faq)
 	r.HandleFunc("/upload", usersC.New).Methods("GET")
 	r.HandleFunc("/upload", usersC.Create).Methods("POST")
-	fmt.Println("Server starting 8080")
+	fmt.Println("Server starting 8080 server...")
 	log.Fatal(http.ListenAndServe(":8080", r))
 }
 
